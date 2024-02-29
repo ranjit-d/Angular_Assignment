@@ -1,0 +1,32 @@
+
+<div class="container">
+  <h4 class="mt-5">Wecome</h4>
+  <span class="form-text">
+    Login to explore more feature
+  </span>
+  <form #loginform="ngForm" (ngSubmit)="onlogin(loginform)">
+    <div >
+      <label>Username:</label>
+      <input class="form-control"   type="text" name="mobile" minlength="4"   required #mobile="ngModel" ngModel>
+    </div>
+<div>
+  <span *ngIf="mobile.invalid && mobile.touched" class="text-danger">
+    Please Enter valid Username!!
+  </span>
+</div>
+<div>
+  <label>Password:</label>
+  <input  class="form-control"  type="password" name="password" minlength="4"  required #password="ngModel" ngModel>
+</div>
+  <div>
+    <span *ngIf="password.invalid && password.touched" class="text-danger">
+      Please Enter valid Password!!
+    </span>
+  </div>
+<div class="main">
+  <button class="btn btn-success" (click)="onlogin(loginform)" [disabled]="loginform.invalid" >Login</button>
+</div>
+  </form>
+</div>
+
+<!-- <router-outlet></router-outlet> -->

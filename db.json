@@ -1,0 +1,30 @@
+{
+  "employeepost": [
+    {
+      "id": 2,
+      "name": "sonal",
+      "email": "sonal@gmail.com",
+      "department": "software Engeneer",
+      "position": "software developer",
+      "joiningdate": "2022-02-04"
+    },
+    {
+      "id": 3,
+      "name": "kiran",
+      "email": "kiran@gmail.com",
+      "department": "electric engneer",
+      "position": "electrician",
+      "joiningdate": "2024-02-02"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
